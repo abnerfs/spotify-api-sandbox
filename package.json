@@ -1,0 +1,28 @@
+{
+  "name": "spotify-api-sandbox",
+  "version": "1.0.0",
+  "description": "Testando a API do spotify",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "node index"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/abnerfs/spotify-api-sandbox.git"
+  },
+  "keywords": [
+    "teste",
+    "spotify",
+    "api"
+  ],
+  "author": "Abner Ferreira Santos",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/abnerfs/spotify-api-sandbox/issues"
+  },
+  "homepage": "https://github.com/abnerfs/spotify-api-sandbox#readme",
+  "dependencies": {
+    "express": "^4.16.2"
+  }
+}
