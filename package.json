@@ -23,6 +23,13 @@
   },
   "homepage": "https://github.com/abnerfs/spotify-api-sandbox#readme",
   "dependencies": {
-    "express": "^4.16.2"
+    "bootstrap": "^4.0.0",
+    "cookie-parser": "^1.4.3",
+    "express": "^4.16.2",
+    "express-handlebars": "^3.0.0",
+    "jquery": "^3.3.1",
+    "node-fetch": "^2.0.0",
+    "querystring": "^0.2.0",
+    "randomstring": "^1.1.5"
   }
 }

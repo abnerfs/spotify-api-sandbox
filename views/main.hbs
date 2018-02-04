@@ -1,0 +1,54 @@
+<h1>Access Token: {{access_token}}</h1>
+<h1>Refresh Token: {{refresh_token}}</h1>
+<h1>Expires In: {{expires_in}}</h1>
+
+<script type="text/javascript">
+    let access_token = '{{access_token}}';
+    let refresh_token = '{{refresh_token}}';
+    let expires_in = '{{expires_in}}';
+
+    localStorage.setItem('access_token', access_token);
+    localStorage.setItem('refresh_token', refresh_token);
+    localStorage.setItem('expires_in', expires_in);
+
+    function getMe(){
+        fetch('https://api.spotify.com/v1/me', {
+            method: 'GET',
+            headers: { 'Authorization' : 'Bearer ' + access_token }
+        })
+        .then(response => response.json())
+        .then(response => {
+            console.log(response);
+        })
+    };
+
+    // getMe();
+
+    function getTracks(){
+        fetch('https://api.spotify.com/v1/me/tracks', {
+            method: 'GET',
+            headers: { 'Authorization' : 'Bearer ' + access_token }
+        })
+        .then(response => response.json())
+        .then(response => {
+            console.log(response);
+        })
+    }
+
+    //getTracks();
+
+    function getPlayer(){
+         fetch('https://api.spotify.com/v1/me/player', {
+            method: 'GET',
+            headers: { 'Authorization' : 'Bearer ' + access_token }
+        })
+        .then(response => response.json())
+        .then(response => {
+            console.log(response);
+        })
+    }
+
+    //getPlayer();
+</script>
+
+
